@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>我生病了，抑郁症</title>
+<meta charset="UTF-8">
+	<link rel="stylesheet prefetch" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style1.css">
+<!-- 引用css -->
+<link rel="stylesheet" type="text/css" href="css/style.css" />	
+<!-- 引用js -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src= "js/drag.js"></script>
+<script type="text/javascript" src="js/rem_responsive.js"></script>
+<script type="text/javascript" src= "js/echarts.js"></script>
+<script type="text/javascript" src= "js/echarts.min.js"></script>
+<script>
+	$(function(){
+		$('.box-1 dl').each(function(){
+			$(this).dragging({
+				move : 'x',
+				randomPosition : true
+			});
+		});
+		$('.box-2 dl').each(function(){
+			$(this).dragging({
+				move : 'y',
+				randomPosition : true
+			});
+		});
+		$('.box-3 dl').each(function(){
+			$(this).dragging({
+				move : 'both',
+				randomPosition : false
+			});
+		});
+		$('.box-4 dl').each(function(){
+			$(this).dragging({
+				move : 'both',
+				randomPosition : true
+			});
+		});
+		$('.box-5 dl').each(function(){
+			$(this).dragging({
+				move : 'both',
+				randomPosition : true ,
+				hander:'.hander'
+			});
+		});
+	});
+</script>
+	
+<style>
+	body{background-color:rgba(17,16,16,1.0)}
+	#division1{background-image: url(http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDPe.vLrjsg4TEoLlo47ieWVgs4DQ595aPIWNjtmqo4VVCFMvkuAAOz2NUO5MonSRiclqX2U3g5LzU97.YA0M59I!/r);background-position: center;background-repeat: no-repeat;background-size:cover;background-position: center,bottom;background-attachment: fixed;text-align: center;vertical-align: middle}
+	#division2{background-image: url(http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDCBwt2RHON*7GN*Uk1gWv3tOnw0skLlLJ*eg0aQPS6MNbaKS*Ew9IDPeLSt*IpWK*OXLTqwJLLlZwGy5GRbf3HY!/r);background-position: center;background-repeat: no-repeat;background-size:cover;background-position: center,bottom;background-attachment: fixed;text-align: center;vertical-align: middle}
+	#division3{background-image: url(http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDDjNUdeWPEADnAg04UYuzIlqbN9GA4svDJAt59rVaHQlzXmRm7G3ibF2CiqBLytO0oIsdiFW6Q37wrl3JdlJ8XU!/r);background-position: center;background-repeat: no-repeat;background-size:cover;background-position: center,bottom;background-attachment: fixed;text-align: center;vertical-align: middle}
+	#division4{background-image: url(http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDGiSp7l1jYS7SevUD.GRV0UEMhwrufClddC*5vsVqXebrMV7CNvBZVrsLPxtUS3dbyk83tQjQ3zjUmGpTqIwgis!/r);background-position: center;background-repeat: no-repeat;background-size:cover;background-position: center,bottom;background-attachment: fixed;text-align: center;vertical-align: middle}
+	#division5{background-image: url(http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDPT2ucpmfnFU0D8yDtTjEilNM9f7C6U9grOKWo*p81jYiC3wrUPyZIr7XkKZbl*RCNUvZsX6*nFrv09R5cF4C5w!/r);background-position: center;background-repeat: no-repeat;background-size:cover;background-position: center,bottom;background-attachment: fixed;text-align: center;vertical-align: middle}
+	#division6{background-image: url(http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDOl2WV.c1Z683d*OhseGwW0xXQLQRjojTXj2yKPHC9YF8kxJLlajSKqFBXUpkyidaLQuUOkfG2t6WNJgrLvxzzU!/r);background-position: center;background-repeat: no-repeat;background-size:cover;background-position: center,bottom;background-attachment: fixed;text-align: center;vertical-align: middle}
+	p{margin-top: 50px}
+	#header{width:auto;height:750px;background-image: url(http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDFpH96jbFtevgAHEob3EcGSpL*W2cvNdo2E3kDj5eTcS5zOfeBUpPFxWY98J7yvzb6Id89skNrxhFku4EMd0uFg!/r);background-repeat: no-repeat;background-size:cover;background-position: center;background-attachment: fixed;text-align: center;vertical-align: middle}
+	#paragragh{margin-top:50px;font-size:30px;font-family:"张海山锐谐体2.0-授权联系：Samtype@QQ.com";color:rgba(255,255,255,1.00);font-weight: normal;text-align: center;background-image: url(http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDDDeR3hO6N9v78sp3rCPcKYM0mKJ25tl.7ly7Qb8Cij8H.6IzxRtox*WuoHPnnoDISeJwul.G8Cc0R2ugkr2xsE!/r);background-size: cover;vertical-align:middle}
+	#viceparagragh2{margin-top:50px;font-size:22px;font-family:"微软雅黑";color:rgba(255,255,255,1.00);font-weight: normal;text-align: left;vertical-align:middle;}
+	#main{margin: 0 auto;margin-top:50px;font-size:50px;text-align: center;background-image: url( http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDDDeR3hO6N9v78sp3rCPcKYM0mKJ25tl.7ly7Qb8Cij8H.6IzxRtox*WuoHPnnoDISeJwul.G8Cc0R2ugkr2xsE!/r);background-size: cover;vertical-align:middle}
+	#main2{margin: 0 auto;margin-top:50px;font-size:50px;text-align: center;background-image: url( http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDDDeR3hO6N9v78sp3rCPcKYM0mKJ25tl.7ly7Qb8Cij8H.6IzxRtox*WuoHPnnoDISeJwul.G8Cc0R2ugkr2xsE!/r);background-size: cover;vertical-align:middle}
+	#main3{margin: 0 auto;margin-top:50px;font-size:50px;text-align: center;background-image: url( http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDDDeR3hO6N9v78sp3rCPcKYM0mKJ25tl.7ly7Qb8Cij8H.6IzxRtox*WuoHPnnoDISeJwul.G8Cc0R2ugkr2xsE!/r);background-size: cover;vertical-align:middle}
+	#main4{margin: 0 auto;margin-top:0px;font-size:50px;text-align: center;background-image: url( http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDDDeR3hO6N9v78sp3rCPcKYM0mKJ25tl.7ly7Qb8Cij8H.6IzxRtox*WuoHPnnoDISeJwul.G8Cc0R2ugkr2xsE!/r);background-size: cover;vertical-align:middle}
+	#main5{margin: 0 auto;margin-top:0px;font-size:50px;text-align: center;background-image: url( http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDDDeR3hO6N9v78sp3rCPcKYM0mKJ25tl.7ly7Qb8Cij8H.6IzxRtox*WuoHPnnoDISeJwul.G8Cc0R2ugkr2xsE!/r);background-size: cover;vertical-align:middle}
+	#main6{margin: 0 auto;margin-top:50px;font-size:50px;text-align: center;background-image: url();background-size: cover;vertical-align:middle}
+	#main7{margin: 0 auto;margin-top:50px;font-size:50px;text-align: center;background-image: url( http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDDDeR3hO6N9v78sp3rCPcKYM0mKJ25tl.7ly7Qb8Cij8H.6IzxRtox*WuoHPnnoDISeJwul.G8Cc0R2ugkr2xsE!/r);background-size: cover;vertical-align:middle}
+	#main8{margin: 0 auto;margin-top:50px;font-size:50px;text-align: center;background-image: url( http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDDDeR3hO6N9v78sp3rCPcKYM0mKJ25tl.7ly7Qb8Cij8H.6IzxRtox*WuoHPnnoDISeJwul.G8Cc0R2ugkr2xsE!/r);background-size: cover;vertical-align:middle}
+	#main9{margin: 0 auto;margin-top:50px;font-size:50px;text-align: center;background-image: url( http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDDDeR3hO6N9v78sp3rCPcKYM0mKJ25tl.7ly7Qb8Cij8H.6IzxRtox*WuoHPnnoDISeJwul.G8Cc0R2ugkr2xsE!/r);background-size: cover;vertical-align:middle}
+		
+	
+        .indThr {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .kcList {
+            width: 18.8rem;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .picList {
+            width: 100%;
+            height: 4.56rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .picList li {
+            width: 32.66%;
+            height: 100%;
+            float: left;
+            margin-right: 1%;
+            overflow: hidden;
+            margin-bottom: 1%;
+        }
+
+        .picList li:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        .meng {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .da-thumbs li a,
+        .da-thumbs li a img {
+            display: block;
+            position: relative
+        }
+
+        .da-thumbs li a {
+            overflow: hidden
+        }
+
+        .da-thumbs li a div {
+            position: absolute;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            opacity: .8;
+            filter: alpha(opacity=80);
+            text-align: center;
+            line-height: 4.56rem;
+            font-size: 0.3rem;
+            color: #fff;
+            font-family: "Medium";
+        }
+
+        .da-thumbs li a div.da-animate {
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out
+        }
+
+        .da-slideFromTop {
+            left: 0;
+            top: -100%
+        }
+
+        .da-slideFromBottom {
+            left: 0;
+            top: 100%
+        }
+
+        .da-slideFromLeft {
+            top: 0;
+            left: -100%
+        }
+
+        .da-slideFromRight {
+            top: 0;
+            left: 100%
+        }
+
+        .da-slideTop {
+            top: 0
+        }
+
+        .da-slideLeft {
+            left: 0
+        }
+
+        .picImg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+	
+</head>
+<body>
+<div id="header"></div>	
+<div id="division1">
+<div id= "paragragh" style="height:35px;vertical-align: middle"><p>一、他们已经失去了感知快乐的能力</p></div>	
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">抑郁症是一种让你感到悲伤的疾病,但它与正常的悲伤情绪又有所不同。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">抑郁症患者通常每天的大部分时间都感到沮丧、悲伤、失望或者绝望。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">这样的状态持续至少<strong>2</strong>周。</p>	
+<div class="indThr" style="margin-top: 50px">
+	<div class="kcList">
+		<ul class="picList da-thumbs" id="da-thumbs">
+			<li>
+			<a href="#">
+			<img src="http://a1.qpic.cn/psc?/V12K2qrn1wtqCf/EpnZ2Lm61bRtWOHnS20OT2b8BbLiYJeREk6PiEsV1pHwgyRQyg1eezKf.2M1.jYEGZeEaagj8wWLsBktazrbPg!!/b&ek=1&kp=1&pt=0&bo=ZgLIAWYCyAERGS4!&tl=3&vuin=648532585&tm=1591686000&sce=60-4-3&rf=viewer_4" class="picImg" />
+			<div style="background-image: url('http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDNb.U*L5cDDXMuzBjOcfvfPyIYOWeU31lLmF*r5YVpoS.HA.QlM92Fp5l26HU07lJSt9IW0AzCzSXAz4DY.kHbg!/r');" class="picHover">
+			“被神灵抛弃的孩子”
+			</div>
+			<p class="picBo" style="background-image: url('http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDNb.U*L5cDDXMuzBjOcfvfPyIYOWeU31lLmF*r5YVpoS.HA.QlM92Fp5l26HU07lJSt9IW0AzCzSXAz4DY.kHbg!/r');">“被神灵抛弃的孩子”</p>
+			</a>
+			</li>
+			<li>
+			<a href="#">
+			<img src="http://m.qpic.cn/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDLqjZn23UE5D7J4VwbfHmn6OqpKVtteZUJKrfhJ3UtxsjpcpaHs16odvR5gYvaq4Q0wfrkaQY4atqbdLH8L.WTk!/b&bo=ZgLIAWYCyAERGS4!&rf=viewer_4" class="picImg" />
+			<div style="background-image: url('http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDNb.U*L5cDDXMuzBjOcfvfPyIYOWeU31lLmF*r5YVpoS.HA.QlM92Fp5l26HU07lJSt9IW0AzCzSXAz4DY.kHbg!/r');" class="picHover">
+			“活着太累了，我不行”
+			</div>
+			<p class="picBo" style="background-image: url('http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/EpnZ2Lm61bRtWOHnS20OTwvkiUiHqH.8rny9OliEyokIn9ro0bJv9C9tpvLP8DqHslku3GhcZ*tk2fMX9Jdv6Q!!/r&ek=1&kp=1&pt=0&bo=ZwLJAWcCyQEDGTw!&tl=1&vuin=648532585&tm=1591689600&sce=60-0-0&rf=viewer_4');">“活着太累了，我不行”</p>
+			</a>
+			</li>
+			<li>
+			<a href="#">
+			<img src="http://m.qpic.cn/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDL.WmgTW3RAGMlmWPIlW6RW7GgjEcCIoPSvQz9WUbxoCBI73mwT7pbzcjtqIuwjCva7glisXHeVFH5f6ZO5by8E!/b&bo=ZgLIAWYCyAERGS4!&rf=viewer_4" class="picImg" />
+			<div style="background-image: url('http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/EpnZ2Lm61bRtWOHnS20OTwvkiUiHqH.8rny9OliEyokIn9ro0bJv9C9tpvLP8DqHslku3GhcZ*tk2fMX9Jdv6Q!!/r&ek=1&kp=1&pt=0&bo=ZwLJAWcCyQEDGTw!&tl=1&vuin=648532585&tm=1591689600&sce=60-0-0&rf=viewer_4');" class="picHover">
+			“有的人是一直活在地狱里的啊”
+			</div>
+			<p class="picBo" style="background-image: url('http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/EpnZ2Lm61bRtWOHnS20OTwvkiUiHqH.8rny9OliEyokIn9ro0bJv9C9tpvLP8DqHslku3GhcZ*tk2fMX9Jdv6Q!!/r&ek=1&kp=1&pt=0&bo=ZwLJAWcCyQEDGTw!&tl=1&vuin=648532585&tm=1591689600&sce=60-0-0&rf=viewer_4');">“有的人是一直活在地狱里的啊”</p>
+			</a>
+			</li>
+			<li>
+			<a href="#">
+			<img src="http://m.qpic.cn/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDJnYRQut9x9kxbdTFQX8xwXMa0lW*pwSTtTziR*VwBK3mC3kUiJgS5HYVfa5q92WQd8k8R1FzI5vGccPb.BCeO4!/b&bo=ZgLIAWYCyAERGS4!&rf=viewer_4" class="picImg" />
+			<div style="background-image: url('http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/EpnZ2Lm61bRtWOHnS20OTwvkiUiHqH.8rny9OliEyokIn9ro0bJv9C9tpvLP8DqHslku3GhcZ*tk2fMX9Jdv6Q!!/r&ek=1&kp=1&pt=0&bo=ZwLJAWcCyQEDGTw!&tl=1&vuin=648532585&tm=1591689600&sce=60-0-0&rf=viewer_4');" class="picHover">
+			“又开始害怕今天”
+			</div>
+			<p class="picBo" style="background-image: url('http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/EpnZ2Lm61bRtWOHnS20OTwvkiUiHqH.8rny9OliEyokIn9ro0bJv9C9tpvLP8DqHslku3GhcZ*tk2fMX9Jdv6Q!!/r&ek=1&kp=1&pt=0&bo=ZwLJAWcCyQEDGTw!&tl=1&vuin=648532585&tm=1591689600&sce=60-0-0&rf=viewer_4');">“又开始害怕今天”</p>
+			</a>
+			</li>
+			<li>
+			<a href="#">
+			<img src="http://m.qpic.cn/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDGSDHgoKkFUp.L0mUGFPDqlQaf.AoWVu8yg6*tzO.56dcZ1**J31BMMa9xHR53aCbKxbZGi5woVWutThLFBvDNQ!/b&bo=ZgLIAWYCyAERGS4!&rf=viewer_4" class="picImg" />
+			<div style="background-image: url('http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/EpnZ2Lm61bRtWOHnS20OTwvkiUiHqH.8rny9OliEyokIn9ro0bJv9C9tpvLP8DqHslku3GhcZ*tk2fMX9Jdv6Q!!/r&ek=1&kp=1&pt=0&bo=ZwLJAWcCyQEDGTw!&tl=1&vuin=648532585&tm=1591689600&sce=60-0-0&rf=viewer_4');" class="picHover">
+			“地球明天爆炸！”
+			</div>
+			<p class="picBo" style="background-image: url('http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/EpnZ2Lm61bRtWOHnS20OTwvkiUiHqH.8rny9OliEyokIn9ro0bJv9C9tpvLP8DqHslku3GhcZ*tk2fMX9Jdv6Q!!/r&ek=1&kp=1&pt=0&bo=ZwLJAWcCyQEDGTw!&tl=1&vuin=648532585&tm=1591689600&sce=60-0-0&rf=viewer_4');">“地球明天爆炸！”</p>
+			</a>
+			</li>
+			<li>
+			<a href="#">
+			<img src="http://m.qpic.cn/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDKcoXhHDVHLhtB7zWJtNfPGMPRD4Z69wzDdDoqEpbJC4iXF1LrM0xM0nRKkxkGEa8KMolV0TQWnRhj0ZuR1bZL0!/b&bo=ZgLIAWYCyAERGS4!&rf=viewer_4" class="picImg" />
+			<div style="background-image: url('http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/EpnZ2Lm61bRtWOHnS20OTwvkiUiHqH.8rny9OliEyokIn9ro0bJv9C9tpvLP8DqHslku3GhcZ*tk2fMX9Jdv6Q!!/r&ek=1&kp=1&pt=0&bo=ZwLJAWcCyQEDGTw!&tl=1&vuin=648532585&tm=1591689600&sce=60-0-0&rf=viewer_4');" class="picHover">
+			“好想跟这个世界说拜拜 不会再见的那种”
+			</div>
+			<p class="picBo" style="background-image: url('http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/EpnZ2Lm61bRtWOHnS20OTwvkiUiHqH.8rny9OliEyokIn9ro0bJv9C9tpvLP8DqHslku3GhcZ*tk2fMX9Jdv6Q!!/r&ek=1&kp=1&pt=0&bo=ZwLJAWcCyQEDGTw!&tl=1&vuin=648532585&tm=1591689600&sce=60-0-0&rf=viewer_4');">“好想跟这个世界说拜拜，不会再见的那种”</p>
+			</a>
+			</li>
+		</ul>
+		
+		<div style="clear: both;"></div>
+	</div>
+</div>
+<script type="text/javascript" src="js/hover.js"></script>
+<script>
+	$('#da-thumbs > li').hoverdir();
+</script>
+
+	<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">新浪微博用户“走饭”是南京某高校的大学生，因为抑郁症于2012年3月17凌晨上吊自杀<br><br>从那以后，其微博评论区成了抑郁症患者的倾诉空间<br><br>我们用走饭微博下最近更新的一千条评论做了这样一张图</p>
+
+<div style="text-align: center;margin-top: 30px"><img src= "http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDMH7rJe0jYLPsfRySXNZtCv*AHbVhiSsbiDFBpiKVvUf6LhXPqc.8mjUXiUXqG8bD*.50H*iJMu8jvzaGCjKTrI!/r"></div>	
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">一了百了、安眠药、绝望、痛苦......</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">世卫组织宣称，2020年，抑郁症将成为全球第二大病症</p>
+	<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">在中国，抑郁症人数也呈现出递增状态</p>
+<div id="main" style="width:1000px;height:500px;"></div>
+<script>
+  var myChart = echarts.init(document.getElementById('main'));
+
+  var option = {
+    backgroundColor:"rgba(17,16,16,0.6)",
+    title: {
+      text: '中国抑郁症人数变化图',
+      textStyle: {
+        align: 'center',
+        color: '#fff',
+        fontSize: 20,
+      },
+      top: '2%',
+      left: 'center',
+    },
+    legend: {
+      color: ['#17B4FA', '#47D8BE', '#F9A589'],
+
+      left: 'center',
+      top: '8%',
+      textStyle: {
+        color: '#ffffff',
+      },
+    },
+    tooltip: {
+      trigger: 'axis',
+      //在这里设置
+      formatter: '{b}<br/>{a0}:{c0}千万',
+    },
+
+    axisPointer: {
+      lineStyle: {
+        color: {
+          type: 'linear',
+          x: 0,
+          y: 0,
+          x2: 0,
+          y2: 1,
+          colorStops: [
+            {
+              offset: 0,
+              color: 'rgba(0, 255, 233,0)',
+            },
+            {
+              offset: 0.5,
+              color: 'rgba(255, 255, 255,1)',
+            },
+            {
+              offset: 1,
+              color: 'rgba(0, 255, 233,0)',
+            },
+          ],
+          global: false,
+        },
+      },
+    },
+
+    grid: {
+      top: '15%',
+      left: '15%',
+      right: '5%',
+      bottom: '15%',
+      // containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: '#9581F5',
+          },
+        },
+        splitArea: {
+          // show: true,
+          color: '#f00',
+          lineStyle: {
+            color: '#f00',
+          },
+        },
+        axisLabel: {
+          color: '#fff',
+        },
+        splitLine: {
+          show: false,
+        },
+        boundaryGap: false,
+        data: ['1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030'],
+      },
+    ],
+    yAxis: [
+      {
+        name: '人数/千万',
+        type: 'value',
+
+        min: 0,
+        max: 8,
+        // max: 140,
+        splitNumber: 4,
+        splitLine: {
+          show: true,
+          lineStyle: {
+            color: 'rgba(255,255,255,0.1)',
+          },
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: '#9581F5',
+          },
+        },
+        axisLabel: {
+          show: true,
+          margin: 20,
+          textStyle: {
+            color: '#d1e6eb',
+          },
+        },
+        axisTick: {
+          show: true,
+        },
+      },
+    ],
+    series: [
+      {
+        name: '人数',
+        type: 'line',
+        // smooth: true, //是否平滑
+        showAllSymbol: true,
+        // symbol: 'image://./static/images/guang-circle.png',
+        symbol: 'circle',
+
+        symbolSize: 5,
+        lineStyle: {
+          normal: {
+            color: '#6c50f3',
+            shadowColor: 'rgba(0, 0, 0, .3)',
+            shadowBlur: 0,
+            shadowOffsetY: 5,
+            shadowOffsetX: 5,
+          },
+        },
+        label: {
+          show: false,
+          position: 'top',
+          textStyle: {
+            color: '#6c50f3',
+          },
+        },
+        itemStyle: {
+          color: '#6c50f3',
+          borderColor: '#fff',
+          borderWidth: 3,
+          shadowColor: 'rgba(0, 0, 0, .3)',
+          shadowBlur: 0,
+          shadowOffsetY: 2,
+          shadowOffsetX: 2,
+        },
+        tooltip: {
+          show: '千万',
+        },
+        areaStyle: {
+          normal: {
+            color: new echarts.graphic.LinearGradient(
+              0,
+              0,
+              0,
+              1,
+              [
+                {
+                  offset: 0,
+                  color: 'rgba(108,80,243,0.3)',
+                },
+                {
+                  offset: 1,
+                  color: 'rgba(108,80,243,0)',
+                },
+              ],
+              false,
+            ),
+            shadowColor: 'rgba(108,80,243, 0.9)',
+            shadowBlur: 20,
+          },
+        },
+        data: [3.86, 3.92, 3.98, 4.03, 4.09, 4.14, 4.18, 4.23, 4.27, 4.32, 4.38, 4.45, 4.52, 4.59, 4.66, 4.74, 4.82, 4.92, 5.02, 5.12, 5.21, 5.29, 5.36, 5.43, 5.5, 5.55, 5.6, 5.64],
+      },
+      {
+        name: '趋势',
+        type: 'line',
+        // smooth: true, //是否平滑
+        showAllSymbol: true,
+        // symbol: 'image://./static/images/guang-circle.png',
+        symbol: 'circle',
+
+        symbolSize: 5,
+        lineStyle: {
+          normal: {
+            color: '#00ca95',
+            shadowColor: 'rgba(0, 0, 0, .3)',
+            shadowBlur: 0,
+            shadowOffsetY: 5,
+            shadowOffsetX: 5,
+          },
+        },
+        label: {
+          show: false,
+          position: 'top',
+          textStyle: {
+            color: '#00ca95',
+          },
+        },
+        itemStyle: {
+          color: '#00ca95',
+          borderColor: '#00ca95',
+          borderWidth: 3,
+          shadowColor: 'rgba(0, 0, 0, .3)',
+          shadowBlur: 0,
+          shadowOffsetY: 2,
+          shadowOffsetX: 2,
+        },
+        tooltip: {
+          show: true,
+        },
+        areaStyle: {
+          normal: {
+            color: new echarts.graphic.LinearGradient(
+              0,
+              0,
+              0,
+              1,
+              [
+                {
+                  offset: 0,
+                  color: 'rgba(0,202,149, 0.3)',
+                },
+                {
+                  offset: 1,
+                  color: 'rgba(0,202,149, 0)',
+                },
+              ],
+              false,
+            ),
+            shadowColor: 'rgba(0,202,149, 0.9)',
+            shadowBlur: 20,
+          },
+        },
+        data: ['-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', 5.64, 5.71, 5.78, 5.85, 5.92, 5.99, 6.06, 6.13, 6.2, 6.27, 6.34, 6.41, 6.48, 6.55],
+      },
+    ],
+  };
+  myChart.setOption(option);
+  window.onresize = () => {
+    myChart.resize();
+  };
+</script>
+</div>
+<div id="division2">	
+<div id= "paragragh" style="height:35px;vertical-align: middle"><p>二、谁会是下一个抑郁症患者？</p></div>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">在中国，女性抑郁症患者远高于男性。这与女性的生理基因、相对敏感的心理、社会环境等等因素有光。</p>		
+<div style="text-align: center;margin-top: 30px"><img src="http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDLszqrAy8P6hTPVD2zDT2f*CDxS2ahdN4WzxW.PNXdljBqGetLeiXktoPh*PWph17Qh6NkMs9OuyF7Fs*3tatxM!/r"></div>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">目前确诊的抑郁症患者以老年人居多，但抑郁症年轻化的趋势也不可轻视。</p>	
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">2019年7月24日，中国青年报在微博发起针对大学生抑郁症的调查，再进行投票的30多万大学生中，超过两成认为自己有重度抑郁。</p>
+<div style="text-align: center;margin-top: 30px"><img src="http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDOhcJEz.YaW2siYEIsMYjjDSMNpGWuBRoP6pOk3D57*uLfrIXodX8jRTpNqC5CoaGuxI4kLvLOIkwc4ud85Nxu4!/r"></div>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">而在已工作人群中，男性农林牧渔劳动者、女性无职业者为抑郁症发病率最高的群体。</p>	
+<div id="main2" style="width:900px;height:400px"></div>	
+<script>
+  var myChart = echarts.init(document.getElementById('main2'));
+  var option = {
+ 
+    backgroundColor: "rgba(17,16,16,0.6)",
+    title: {
+        text: '中国抑郁症患者职业分布',
+        textStyle: {
+            align: 'center',
+            color: '#fff',
+            fontSize: 20,
+        },
+        top: '2%',
+        left: 'center',
+    },
+ 
+    tooltip: { //提示框组件
+        trigger: 'axis',
+        formatter: '{b}<br />{a0}: {c0}‰<br />{a1}: {c1}‰',
+        axisPointer: {
+            type: 'shadow',
+            label: {
+                backgroundColor: '#6a7985'
+            }
+        },
+        textStyle: {
+            
+            color: '#a8aab0',
+            
+            fontStyle: 'normal',
+            fontFamily: '微软雅黑',
+            fontSize: 15,
+          
+        }
+    },
+    grid: {
+        left: '1%',
+        right: '4%',
+        bottom: '6%',
+        top: 30,
+        padding: '0 0 10 0',
+        containLabel: true,
+    },
+    legend: { //图例组件，颜色和名字
+        right: 10,
+        top: 0,
+        itemGap: 16,
+        itemWidth: 18,
+        itemHeight: 10,
+        data: [{
+                name: '男',
+                //icon:'image://../wwwroot/js/url2.png', //路径
+            },
+            {
+                name: '女',
+            }
+        ],
+        textStyle: {
+        
+            color: '#a8aab0',
+            fontStyle: 'normal',
+            fontFamily: '微软雅黑',
+            fontSize: 18,
+        }
+    },
+    xAxis: [{
+        type: 'category',
+        boundaryGap: true, //坐标轴两边留白
+        data: ['工人', '农林牧渔劳动者', '行政管理/专业技术人员', '私营业主/销售服务人员', '离退休', '家务/待业/下岗/其他', ],
+        axisLabel: { //坐标轴刻度标签的相关设置。
+            interval: 0, //设置为 1，表示『隔一个标签显示一个标签』
+            margin: 15,
+            textStyle: {
+                color: '#fff',
+                fontStyle: 'normal',
+                fontFamily: '微软雅黑',
+                fontSize: 12,
+            }
+        },
+        axisTick: { //坐标轴刻度相关设置。
+            show: false,
+        },
+        axisLine: { //坐标轴轴线相关设置
+            lineStyle: {
+                color: '#fff',
+                opacity: 0.2
+            }
+        },
+        splitLine: { //坐标轴在 grid 区域中的分隔线。
+            show: false,
+        }
+    }],
+
+    yAxis: [{
+        type: 'value',
+        axisLabel: {
+            textStyle: {
+
+                color: '#a8aab0',
+                fontStyle: 'normal',
+                fontFamily: '微软雅黑',
+                fontSize: 12,
+            }
+        },
+        axisLine: {
+            show: true
+        },
+        axisTick: {
+            show: true
+        },
+        splitLine: {
+            show: true,
+            lineStyle: {
+                color: ['#fff'],
+                opacity: 0.06
+            }
+        }
+
+    }],
+    series: [{
+            name: '男',
+            type: 'bar',
+            data: [4.94, 15.8, 3.9, 4, 6.9, 13.8],
+            barWidth: 40,
+            barGap: 0, //柱间距离
+            label: { //图形上的文本标签
+                normal: {
+                    show: false,
+                    position: 'top',
+                    textStyle: {
+                        color: '#a8aab0',
+                        fontStyle: 'normal',
+                        fontFamily: '微软雅黑',
+                        fontSize: 12,
+                    },
+                },
+            },
+            itemStyle: { //图形样式
+                normal: {
+                    barBorderRadius: [5, 5, 0, 0],
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 1,
+                        color: 'rgba(127, 128, 225, 0.7)'
+                    }, {
+                        offset: 0.9,
+                        color: 'rgba(72, 73, 181, 0.7)'
+                    }, {
+                        offset: 0.31,
+                        color: 'rgba(0, 208, 208, 0.7)'
+                    }, {
+                        offset: 0.15,
+                        color: 'rgba(0, 208, 208, 0.7)'
+                    }, {
+                        offset: 0,
+                        color: 'rgba(104, 253, 255, 0.7)'
+                    }], false),
+                },
+            },
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5.64, 8.17, 4.51, 5.23, 5.64, 11.47],
+            barWidth: 40,
+            barGap: 0.2, //柱间距离
+            label: { //图形上的文本标签
+                normal: {
+                    show: false,
+                    position: 'top',
+                    textStyle: {
+                        color: '#a8aab0',
+                        fontStyle: 'normal',
+                        fontFamily: '微软雅黑',
+                        fontSize: 12,
+                    },
+                },
+            },
+            itemStyle: { //图形样式
+                normal: {
+                    barBorderRadius: [5, 5, 0, 0],
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 1,
+                        color: 'rgba(127, 128, 225, 0.7)'
+                    }, {
+                        offset: 0.9,
+                        color: 'rgba(72, 73, 181, 0.7)'
+                    }, {
+                        offset: 0.25,
+                        color: 'rgba(226, 99, 74, 0.7)'
+                    }, {
+                        offset: 0,
+                        color: 'rgba(253, 200, 106, 0.7)'
+                    }], false),
+                },
+            },
+        }
+    ]
+};
+  myChart.setOption(option);
+  window.onresize = () => {
+    myChart.resize();
+  };
+</script>
+</div>
+<div id="division3">	
+<div id="paragragh" style="height:35px;vertical-align: middle"><p>三、以为只是心情不好</p></div>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">绝大多数抑郁症患者在轻度甚至中度时都不会主动就医。</p>	
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">她们可能觉得只是最近心情不好、容易疲倦。</p>
+<div id="main3" style="width:850px;height:400px"></div>		
+<script>
+  var myChart = echarts.init(document.getElementById('main3'));
+    const colorArray = [{
+        top: '#ffa800', //黄
+        bottom: 'rgba(248,195,248,.3)'
+    }, {
+        top: '#1ace4a', //绿
+        bottom: 'rgba(100,255,249, 0.3)'
+    },
+    {
+        top: '#4bf3ff', //蓝
+        bottom: 'rgba(135,183,255,.3)'
+    }, {
+        top: '#4f9aff', //深蓝
+        bottom: 'rgba(11,42,84,.3)'
+    },
+    {
+        top: '#b250ff', //粉
+        bottom: 'rgba(100,255,249,.3)'
+    }
+];
+
+var option = {
+          title: {
+        text: '抑郁症患者初期表现',
+        textStyle: {
+            align: 'center',
+            color: '#fff',
+            fontSize: 20,
+        },
+        top: '2%',
+        left: 'center',
+    },
+    backgroundColor:"rgba(17,16,16,0.6)",
+    tooltip: {
+        show: true,
+        formatter: '{b} : {c}%'
+    },
+    xAxis: {
+        type: 'value',
+        show: false,
+    },
+    yAxis: {
+        type: 'category',
+        axisTick: {
+            show: false,
+            alignWithLabel: false,
+            length: 5,
+        },
+        inverse: 'true',
+        axisLine: {
+                show: false,
+                lineStyle: {
+                    color: '#fff',
+                }
+            },
+        data: ['生活很没意思', '不专注', '无缘无故劳累', '觉得自己没用', ]
+    },
+    series: [{
+        type: 'bar',
+        label: {
+                normal: {
+                    show: false,
+                    position: 'right',
+                    formatter: '{c}',
+                }
+            },
+        data: [90.18, 82.55, 79.25, 75.71],
+        barWidth: '40px',
+        barCategoryGap: '50%',
+        itemStyle: {
+            normal: {
+                show: false,
+                color: function(params) {
+                    let num = colorArray.length;
+                    return {
+                        type: 'linear',
+                        colorStops: [{
+                                offset: 0,
+                                color: colorArray[params.dataIndex % num].bottom
+                            }, {
+                                offset: 1,
+                                color: colorArray[params.dataIndex % num].top
+                            }, {
+                                offset: 0,
+                                color: colorArray[params.dataIndex % num].bottom
+                            }, {
+                                offset: 1,
+                                color: colorArray[params.dataIndex % num].top
+                            }, {
+                                offset: 0,
+                                color: colorArray[params.dataIndex % num].bottom
+                            }, {
+                                offset: 1,
+                                color: colorArray[params.dataIndex % num].top
+                            }, {
+                                offset: 0,
+                                color: colorArray[params.dataIndex % num].bottom
+                            }, {
+                                offset: 1,
+                                color: colorArray[params.dataIndex % num].top
+                            }, {
+                                offset: 0,
+                                color: colorArray[params.dataIndex % num].bottom
+                            }, {
+                                offset: 1,
+                                color: colorArray[params.dataIndex % num].top
+                            }]
+                    }
+                },
+                barBorderRadius: 20,
+                borderWidth: 0,
+                borderColor: '#333',
+            }
+        }
+    }]
+};
+
+  myChart.setOption(option);
+  window.onresize = () => {
+    myChart.resize();
+  };
+</script>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">大多数抑郁症患者是在只有心理或生理的压力达到无法忍受的程度后，才选择就医。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">只有不到10%的人选择医疗救助，且通常在出现症状三年后才进行医学治疗。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">患者往往已经由轻度拖延到了中度重度。</p>
+<p style="font-family: '黑体';color: rgba(255,255,255,1.00);font-size:25px;text-align: center;">选择就医原因分布图</p>		
+<div id="main4" style="width:850px;height:600px"></div>		
+<script>
+  var myChart = echarts.init(document.getElementById('main4'));
+    var scaleData = [{
+    
+        'name': '失眠',
+        'value': 26
+    },
+    {
+        'name': '头晕头痛',
+        'value': 24
+    },
+    {
+        'name': '精神不振',
+        'value': 28
+    },
+    {
+        'name': '食欲不振',
+        'value': 11.7
+    },
+     {
+        'name': '悲痛厌世',
+        'value': 9.7
+    },
+    
+   
+];
+// 随机颜色
+var rich = {
+    white: {
+        color: '#ddd',
+        align: 'center',
+        padding: [3, 0]
+    }
+};
+var placeHolderStyle = {
+    normal: {
+        label: {
+            show: false
+        },
+        labelLine: {
+            show: false
+        },
+        color: 'rgba(0, 0, 0, 0)',
+        borderColor: 'rgba(0, 0, 0, 0)',
+        borderWidth: 0
+    }
+};
+function bg2(){
+        return '#'+Math.floor(Math.random()*0xffffff).toString(16);
+    }
+	
+	function rancolors(len){
+		var color=[];
+		for (var i = 0; i <= len; i++) {
+			var sjys=bg2();
+			color.push(sjys);
+			for (var i = 0; i < color.length; i++) {
+				if(color[i]=sjys){
+					color[i]=bg2();
+				}
+			}
+		}
+		 return color;
+	}
+var data = [];
+var color=rancolors(7)
+for (var i = 0; i < scaleData.length; i++) {
+    data.push({
+        value: scaleData[i].value,
+        name: scaleData[i].name,
+        itemStyle: {
+            normal: {
+                borderWidth: 50,
+                shadowBlur: 100,
+                borderColor:color[i],
+                shadowColor: color[i]
+            }
+        }
+    }, {
+        value: 20,
+        name: '',
+        itemStyle: placeHolderStyle
+    });
+}
+var seriesObj = [{
+    name: '',
+    type: 'pie',
+    clockWise: false,
+    radius: [100, 200],
+    hoverAnimation: false,
+    itemStyle: {
+        normal: {
+            label: {
+                show: true,
+                position: 'outside',
+                color: '#ddd',
+                formatter: function(params) {
+                    var percent = 0;
+                    var total = 0;
+                    for (var i = 0; i < scaleData.length; i++) {
+                        total += scaleData[i].value;
+                    }
+                    percent = ((params.value / total) * 100).toFixed(0);
+                    if(params.name !== '') {
+                        return params.name + '\n{white|' + '占比' + percent + '%}';
+                    }else {
+                        return '';
+                    }
+                },
+                rich: rich
+            },
+            labelLine: {
+                length:20,
+                length2:100,
+                show: true,
+                color:'#00ffff'
+            }
+        }
+    },
+    data: data
+}];
+option = {
+    backgroundColor:"rgba(17,16,16,0.6)",
+    
+    tooltip: {
+        show: false
+    },
+    legend: {
+        show: false
+    },
+    toolbox: {
+        show: false
+    },
+    series: seriesObj
+}
+
+  myChart.setOption(option);
+  window.onresize = () => {
+    myChart.resize();
+  };
+</script>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">而医学方面诊断水平的有限性，也使得很多抑郁症患者没能及时得到救治。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">据统计，我国抑郁症识别率仅为21%，接受系统干预和治疗者仅为10%。</p>
+<p style="font-family: '黑体';color: rgba(255,255,255,1.00);font-size:25px;text-align: center">我国抑郁症识别率统计</p>			
+<div id="main5" style="width:700px;height:500px"></div>		
+<script>
+  var myChart = echarts.init(document.getElementById('main5'));
+var scale = 1;
+var echartData = [{
+    value: 79000000,
+    name: '未识别',
+     itemStyle: {
+                    normal: {//颜色渐变
+                        color: new echarts.graphic.LinearGradient(
+                            0, 0, 0, 1,
+                            [
+                                {offset: 0, color: '#E58B44'},
+                                
+                            ]
+                        )
+                    }
+                }
+              
+},   {
+    value: 10000000,
+    name: '确诊接受治疗',
+     itemStyle: {
+                    normal: {//颜色渐变
+                        color: new echarts.graphic.LinearGradient(
+                            0, 0, 0, 1,
+                            [
+                                {offset: 0, color: '#7DCBD9'},
+                                
+                            ]
+                        )
+                    }
+                }
+       
+}, {
+    value: 11000000,
+    name: '确诊未接受治疗',
+     itemStyle: {
+                    normal: {//颜色渐变
+                        color: new echarts.graphic.LinearGradient(
+                            0, 0, 0, 1,
+                            [
+                                {offset: 0, color: '#FFADAD'},
+                                
+                            ]
+                        )
+                    }
+                }
+       
+}]
+var total_datas = 0;
+for (var i = 0; i < echartData.length; i++) {
+    total_datas += echartData[i].value
+}
+
+var rich = {
+    yellow: {
+        color: "#FFF",
+        fontSize: 15 * scale,
+        // padding: [21, 0],
+        align: 'center'
+    },
+    total: {
+        color: "#FFF",
+        fontSize: 40 * scale,
+        align: 'center'
+    },
+
+    blue: {
+        color: '#49dff0',
+        fontSize: 16 * scale,
+        align: 'center'
+    },
+    hr: {
+        borderColor: '#FFF',
+        width: '100%',
+        borderWidth: 1,
+        height: 0,
+    }
+},
+option = {
+
+    backgroundColor: "rgba(17,16,16,0.6)",
+   title: {
+        text: '总数1亿',
+        subtext: total_datas,
+        textStyle: {
+            color: '#FFF',
+            fontSize: 40,
+            align: 'center'
+        },
+        subtextStyle: {
+            fontSize: 30,
+            color: ['#f2f2f2']
+        },
+        x: 'center',
+        y: 'center',
+    },
+      legend: {
+            // orient 设置布局方式，默认水平布局，可选值：'horizontal'（水平） | 'vertical'（垂直）
+            orient: 'vertical',
+            // x 设置水平安放位置，默认全图居中，可选值：'center' | 'left' | 'right' | {number}（x坐标，单位px）
+            x: 'left',
+            // y 设置垂直安放位置，默认全图顶端，可选值：'top' | 'bottom' | 'center' | {number}（y坐标，单位px）
+            y: 'center',
+            itemWidth: 24,   // 设置图例图形的宽
+            itemHeight: 18,  // 设置图例图形的高
+            textStyle: {
+              color: '#FFF'  // 图例文字颜色
+            },
+            // itemGap设置各个item之间的间隔，单位px，默认为10，横向布局时为水平间隔，纵向布局时为纵向间隔
+            itemGap: 30,
+            data: ['未识别','确诊未接受治疗','确诊接受治疗']
+          },
+
+    series: [{
+        name: '总考生数量',
+        type: 'pie',
+         itemStyle: {
+        normal: {
+          borderWidth: 5,
+          borderColor: "#FFF"
+        }
+      },
+        radius: ['38%', '50%'],
+        hoverAnimation: false,
+        color: ['#c487ee', '#deb140', '#49dff0', '#034079', '#6f81da', '#00ffb4'],
+        label: {
+            normal: {
+                formatter: function(params, ticket, callback) {
+                    var total = 0; //考生总数量
+                    var percent = 0; //考生占比
+                    echartData.forEach(function(value, index, array) {
+                        total += value.value;
+                    });
+                    percent = ((params.value / total) * 100).toFixed(1);
+                    return '{yellow|' + params.value /10000+ '万}\n{blue|' + percent + '%}';
+                },
+                rich: rich
+            },
+        },
+        labelLine: {
+            normal: {
+                length: 55 * scale,
+                length2: 10,
+                lineStyle: {
+                    color: '#FFF'
+                }
+            }
+        },
+        data: echartData
+    }]
+};
+
+  myChart.setOption(option);
+  window.onresize = () => {
+    myChart.resize();
+  };
+</script>
+</div>
+<div id="division4">	
+<div id= "paragragh" style="height:35px;vertical-align: middle"><p>四、死亡成了解脱</p></div>
+<div style="vertical-align: middle;margin-left: 300px"><br><img src= "http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDLal6cnOceL6ZdBJ1H66CZxYEUE7I98JpGm94rqQsgNLQSv2dw9YrkJvT9KpkZGzQPuy7rzjJy*HNcFpZqI8Z90!/r" style="width: 390px;height: 500px">
+<p id="viceparagragh2" style="width: 300px;height: 300px;float:right;margin-right:300px;"><br>2019年，我国泛抑郁症人数已经超过一亿。每14个人里面就有一位抑郁症患者。每100人里或许就有1人因为抑郁症永远离开这个世界。</br><br><br>
+  他们可能就在我们身边。抑郁症患者可能就是某天晚上关了灯的住户。可能某个要出租房屋的主人，正是因为抑郁症而结束了生命。</br></br></p>
+	
+</div>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">由于主客观种种因素限制，很多抑郁症患者没有得到及时的医疗救助，情况日渐糟糕。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">抑郁症患者的自杀率是普通人的36倍，15%-17%的人最终会选择自杀。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">或许对身在天堂的他们来说，死，成了一件最轻松的事情。</p>
+		
+<div id="card">
+  <div class="author-quote-wrap">
+	<input class="toggle-quote" type="radio" id="AQ-1" name="quote" checked>
+	<div class="author-quote">
+		<div class="pull-left author-photo photo-a animated bounceInLeft">
+			<div class="navigate">
+				<label class="label left" for="AQ-5">&nbsp;</label>
+				<label class="label right" for="AQ-2">&nbsp;</label>
+			</div>
+		</div>
+		<div class="pull-right quote-content">
+			<div class="clearfix animated zoomIn"></div>
+			<div class="quote-text animated rotateInDownRight" style="font-family: '杨任东竹石体 Semibold'"><br>秋天该很好,<br><br>你若尚在场。</div>
+			<div class="quote-author animated lightSpeedIn" style="font-family: '黑体';font-size: 20px">张国荣（1956.9.12 - 2003.4.1）</div>
+		</div>
+	</div>
+
+	<input class="toggle-quote" type="radio" id="AQ-2" name="quote">
+	<div class="author-quote">
+		<div class="pull-left author-photo photo-b animated bounceInLeft">
+			<div class="navigate">
+				<label class="label left" for="AQ-1">&nbsp;</label>
+				<label class="label right" for="AQ-3">&nbsp;</label>
+			</div>
+		</div>
+		<div class="pull-right quote-content">
+			<div class="clearfix animated zoomIn"></div>
+			<div class="quote-text animated zoomInDown" style="font-family: '杨任东竹石体 Semibold'"><br>请你<br>带着那份努力，<br>活下去。</div>
+			<div class="quote-author animated lightSpeedIn" style="font-family: '黑体';font-size: 20px">崔雪莉（1994.3.29 - 2019.10.14）</div>
+		</div>
+	</div>
+
+	<input class="toggle-quote" type="radio" id="AQ-3" name="quote">
+	<div class="author-quote">
+		<div class="pull-left author-photo photo-c animated bounceInLeft">
+			<div class="navigate">
+				<label class="label left" for="AQ-2">&nbsp;</label>
+				<label class="label right" for="AQ-4">&nbsp;</label>
+			</div>
+		</div>
+		<div class="pull-right quote-content">
+			<div class="clearfix animated zoomIn"></div>
+			<div class="quote-text animated bounceInRight" style="font-family: '杨任东竹石体 Semibold'"><br>舞台风光<br>道尽的，<br>是背后辛酸。</div>
+			<div class="quote-author animated lightSpeedIn" style="font-family: '黑体';font-size: 20px">乔任梁（1987.10.15 - 2016.9.16）</div>
+		</div>
+	</div>
+
+	<input class="toggle-quote" type="radio" id="AQ-4" name="quote">
+	<div class="author-quote">
+		<div class="pull-left author-photo photo-d animated bounceInLeft">
+			<div class="navigate">
+				<label class="label left" for="AQ-3">&nbsp;</label>
+				<label class="label right" for="AQ-5">&nbsp;</label>
+			</div>
+		</div>
+		<div class="pull-right quote-content">
+			<div class="clearfix animated zoomIn"></div>
+			<div class="quote-text animated lightSpeedIn" style="font-family: '杨任东竹石体 Semibold'"><br>不想骗自己，<br>我的忧伤<br>你永远不懂。</div>
+			<div class="quote-author animated lightSpeedIn" style="font-family: '黑体';font-size: 20px">陈琳（1970.1.31 - 2009.10.31）</div>
+		</div>
+	</div>
+
+	<input class="toggle-quote" type="radio" id="AQ-5" name="quote">
+	<div class="author-quote">
+		<div class="pull-left author-photo photo-e animated bounceInLeft">
+			<div class="navigate">
+				<label class="label left" for="AQ-4">&nbsp;</label>
+				<label class="label right" for="AQ-1">&nbsp;</label>
+			</div>
+		</div>
+		<div class="pull-right quote-content">
+			<div class="clearfix animated zoomIn"></div>
+			<div class="quote-text animated flipInX" style="font-family: '杨任东竹石体 Semibold'"><br>心里一疼，<br><br>何必如此。<br></div>
+			<div class="quote-author animated lightSpeedIn"style="font-family: '黑体';font-size: 20px">李晓（1972 - 2015.3.13）</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div id="division5">	
+<div id= "paragragh" style="height:35px;vertical-align: middle"><p>五、他们需要被关注，被理解</p></div>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">截止2019年12月，新浪微博「抑郁」相关话题累计阅读4.5亿；</p>	
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">百度「抑郁」相关贴吧累计发帖2700万；</p>	
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">知乎「抑郁」相关问题关注量82万。</p><p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">从百度指数看，抑郁的表现症状、抑郁症的十个前兆、抑郁症自测30题成了热搜的关键。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">可能在你不经意间，他们正经历刀山火海。</p>		
+<div id="main6" style="width:700px;height:500px"></div>		
+<script>
+  var myChart = echarts.init(document.getElementById('main6'));
+    var laber = ["弱", '相关性', '强', "  ", '强', '相关性', '弱'];
+option = {
+     title: {
+        text: '抑郁症话题热点图',
+        textStyle: {
+            align: 'center',
+            color: '#7B7B7B',
+            fontSize: 20,
+        },
+        top: '0%',
+        left: 'center',
+    },
+    "xAxis": [{
+        zlevel: 20,
+        type: 'value',
+        min: -50,
+        max: 50,
+        interval: 16.7,
+        axisLabel: {
+            margin: -150,
+            formatter: function(value, index) {
+                return laber[index]
+            },
+            lineStyle: {
+                color: '#278dfb'
+            }
+        },
+        splitLine: {
+            show: false,
+        },
+        splitArea: {
+            show: false,
+        },
+    }],
+    "yAxis": [{
+        "min": -50,
+        "max": 50,
+        "show": false,
+        "splitLine": {
+            "show": false
+        },
+        "splitArea": {
+            "show": false
+        }
+    }],
+    "legend": {
+        "show": true,
+        'top': '5%',
+        "data": ['下降', '上升']
+    },
+    "tooltip": {
+        "showContent": false
+    },
+    "sendDataSetting": {
+        "selectParams": false,
+        "selectCell": false
+    },
+    "visualMap": [{
+        "show": false,
+        "dimension": 2,
+        "min": 1,
+        "max": 3,
+        "precision": 0.01,
+        // "inRange": {
+        //     "symbolSize": [10, 50]
+        // }
+    }],
+    "series": [{
+        zlevel: 20,
+        type: 'scatter',
+        symbol: 'circle',
+        symbolSize: 150,
+        label: {
+            normal: {
+                show: true,
+                formatter: function(param) {
+                    return param.data[2];
+                },
+            },
+        },
+        itemStyle: {
+            normal: {
+                color: '#5aa8ee',
+            },
+        },
+        data: [
+            [0, 0, '抑郁症', '#278DFB', 60]
+        ],
+    }, {
+        zlevel: 20,
+        name: '下降',
+        type: 'scatter',
+        symbol: 'circle',
+        symbolSize: function(param, a) {
+            return param[4];
+        },
+        itemStyle: {
+            normal: {
+                color: function(param) {
+                    return param.data[3];
+                },
+            },
+        },
+        label: {
+            color: '#000',
+            normal: {
+                textStyle: {
+                    fontSize: 20,
+                },
+                position: 'bottom',
+                show: true,
+                formatter: function(param) {
+                    return param.data[2];
+                },
+            },
+        },
+
+        "data": [
+            [-31, 3, "老年抑郁症", "#BF54Fb", 15],
+            [-17, -46, "抑郁症的人看得懂的图", "#BF54Fb", 15],
+            [1, 34, "抑郁症治疗", "#BF54Fb", 20],
+
+        ],
+        "markLine": {}
+    }, {
+        "name": "上升",
+        "zlevel": 20,
+        "type": "scatter",
+        "symbol": "circle",
+        "itemStyle": {
+            "normal": {}
+        },
+        label: {
+            color: "#000",
+            normal: {
+                textStyle: {
+                    fontSize: 20
+                },
+                position: 'bottom',
+                show: true,
+                formatter: function(param) {
+                    return param.data[2];
+                },
+            }
+        },
+        data: [
+            [16, -47, "抑郁症", "#FCB03d", 15],
+            [35, -23, "重度抑郁症", "#FCB03d", 10],
+            [-40, 23, "抑郁症SDS测试", "#FCB03d", 15],
+            [39, 33, "怎么确认自己患抑郁症", "#FCB03d", 15],
+            [10, 24, "抑郁的表现症状", "#FCB03d", 30],
+            [-15, 15, "抑郁症自测30题", "#FCB03d", 30],
+            [-3, 49, "双重人格", "#FCB03d", 10],
+            [12, -28, "抑郁症怎么治疗", "#FCB03d", 10],
+            [1, -10, "抑郁症的十个前兆", "#FCB03d", 35],
+            [25, -53, "如何判断得了抑郁症", "#FCB03d", 10],
+            [-42, -36, "躁郁症", "#FCB03d", 10],
+            [-34, 41, "社交焦虑障碍", "#FCB03d", 10],
+            [-12, -22, "微笑抑郁症", "#FCB03d", 10],
+            [56, 44, "抑郁", "#FCB03d", 10],
+            [52, -34, "自闭症", "#FCB03d", 10],
+        ],
+
+    }, {
+        "type": "pie",
+        "radius": ["0", "70%"],
+        "center": ["50%", "50%"],
+        "zlevel": 2,
+        "avoidLabelOverlap": false,
+        "label": {
+            "normal": {
+                "show": false,
+                "position": "center"
+            },
+            "emphasis": {
+                "show": false,
+                "textStyle": {
+                    "fontWeight": "bold"
+                }
+            }
+        },
+        "itemStyle": {
+            "normal": {
+                "color": {
+                    "type": "linear",
+                    "x": 0,
+                    "y": 0,
+                    "x2": 0,
+                    "y2": 1,
+                    "colorStops": [{
+                        "offset": 0.05,
+                        "color": "rgba(130,198,255, 0.1)"
+                    }, {
+                        "offset": 0.5,
+                        "color": "rgba(130,198,255, 0.2)"
+                    }, {
+                        "offset": 0.95,
+                        "color": "rgba(130,198,255, 0.1)"
+                    }]
+                }
+            }
+        },
+        "labelLine": {
+            "normal": {
+                "show": false
+            }
+        },
+        "data": [{
+            "value": 3357
+        }]
+    }, {
+        "type": "pie",
+        "radius": ["0%", "90%"],
+        "center": ["50%", "50%"],
+        "avoidLabelOverlap": false,
+        "label": {
+            "normal": {
+                "show": false,
+                "position": "center"
+            },
+            "emphasis": {
+                "show": false,
+                "textStyle": {
+                    "fontWeight": "bold"
+                }
+            }
+        },
+        "itemStyle": {
+            "normal": {
+                "color": {
+                    "type": "linear",
+                    "x": 0,
+                    "y": 0,
+                    "x2": 0,
+                    "y2": 1,
+                    "colorStops": [{
+                        "offset": 0.1,
+                        "color": "rgba(130,198,255, 0)"
+                    }, {
+                        "offset": 0.5,
+                        "color": "rgba(130,198,255, 0.2)"
+                    }, {
+                        "offset": 0.9,
+                        "color": "rgba(130,198,255, 0)"
+                    }]
+                }
+            }
+        },
+        "labelLine": {
+            "normal": {
+                "show": false
+            }
+        },
+        "data": [{
+            "value": 3235
+        }]
+    }, {
+        "type": "pie",
+        "radius": ["0%", "135%"],
+        "center": ["51%", "50%"],
+        "avoidLabelOverlap": false,
+        "label": {
+            "normal": {
+                "show": false,
+                "position": "center"
+            },
+            "emphasis": {
+                "show": false,
+                "textStyle": {
+                    "fontWeight": "bold"
+                }
+            }
+        },
+        "itemStyle": {
+            "normal": {
+                "color": {
+                    "type": "linear",
+                    "x": 0,
+                    "y": 0,
+                    "x2": 0,
+                    "y2": 1,
+                    "colorStops": [{
+                        "offset": 0.2,
+                        "color": "rgba(130,198,255, 0.0)"
+                    }, {
+                        "offset": 0.5,
+                        "color": "rgba(130,198,255, 0.2)"
+                    }, {
+                        "offset": 0.88,
+                        "color": "rgba(130,198,255, 0.0)"
+                    }]
+                }
+            }
+        },
+        "labelLine": {
+            "normal": {
+                "show": false
+            }
+        },
+        "data": [{
+            "value": 3235
+        }]
+    }],
+
+
+
+};
+
+myChart.setOption(option);
+window.onresize = () => {
+    myChart.resize();
+};
+</script>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">他们可能因为病耻感而不敢踏入医院,</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">可能因为对发病机制一无所知而选择自己硬抗，</p>	
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">也可能因为无法得到身边人的支持而自暴自弃。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">他们不是别人，他们就是你我，是你我身边的她。</p>
+<div style="text-align: center;margin-top: 30px"><img src= "http://m.qpic.cn/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDEqR6FeAlyrba*XbPoqOU5TvQlPvmvwN2tkRsppcMumQCoECCXgAILjON5j2SPnmFe*eC8pCvJt9oJOu2rG59TI!/b&bo=vALIALwCyAACGT0!&rf=viewer_4"></div>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">他们需要被关注、被理解、被尊重。</p><p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">近年来，我国对抑郁症的关注程度不断上升。多方面举措防治抑郁。</p>
+<div style="text-align: center;margin-top: 30px"><img src= "http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDPp9x8Nrp4CETzB1NpBiiSwnO.mDo1SiVuuJdWf0UYhX3aT*aKtTv1.AJRy83QEhP*o*EGmcZQoDD*y3tBM.cFU!/r"></div>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">截止2017年，中国共有精神病院1170家。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">精神科医生从2014年的2.3万名增长到2017年的4万名。</p>
+<div id="main7" style="width:700px;height:500px"></div>		
+<script>
+  var myChart = echarts.init(document.getElementById('main7'));
+    var option = {
+    backgroundColor: "rgba(17,16,16,0.6)",
+    title: {
+        text: '中国精神病医院数量',
+        textStyle: {
+            align: 'center',
+            color: '#fff',
+            fontSize: 20,
+        },
+        top: '2%',
+        left: 'center',
+    },
+    grid: {
+        top: "25%",
+        bottom: "10%"
+    },
+    tooltip: {
+        trigger: "axis",
+        axisPointer: {
+            type: "shadow",
+            label: {
+                show: true
+            }
+        }
+    },
+    legend: {
+        data: ["同比增长", "中国精神病医院数量"],
+        top: "15%",
+        textStyle: {
+            color: "#ffffff"
+        }
+    },
+    xAxis: {
+        data: [
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+         
+        ],
+        axisLine: {
+            show: false //隐藏X轴轴线
+        },
+        axisTick: {
+            show: false //隐藏X轴刻度
+        },
+        axisLabel: {
+            show: true,
+            textStyle: {
+                color: "#ebf8ac" //X轴文字颜色
+            }
+        }
+    },
+    yAxis: [{
+            type: "value",
+            name: "数量",
+            nameTextStyle: {
+                color: "#ebf8ac"
+            },
+            splitLine: {
+                show: false
+            },
+            splitLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+            axisLine: {
+                show: false
+            },
+            axisLabel: {
+                show: true,
+                textStyle: {
+                    color: "#ebf8ac"
+                }
+            }
+        },
+        {
+            type: "value",
+            name: "同比增长",
+            nameTextStyle: {
+                color: "#ebf8ac"
+            },
+            position: "right",
+            splitLine: {
+                show: false
+            },
+            splitLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+            axisLine: {
+                show: false
+            },
+            axisLabel: {
+                show: true,
+                formatter: "{value} %", //右侧Y轴文字显示
+                textStyle: {
+                    color: "#ebf8ac"
+                }
+            }
+        },
+        {
+            type: "value",
+            gridIndex: 0,
+            min: 50,
+            max: 100,
+            splitNumber: 8,
+            splitLine: {
+                show: false
+            },
+            axisLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+            axisLabel: {
+                show: false
+            },
+            splitArea: {
+                show: true,
+                areaStyle: {
+                    color: ["rgba(250,250,250,0.0)", "rgba(250,250,250,0.05)"]
+                }
+            }
+        }
+    ],
+    series: [{
+            name: "同比增长",
+            type: "line",
+            yAxisIndex: 1, //使用的 y 轴的 index，在单个图表实例中存在多个 y轴的时候有用
+            smooth: true, //平滑曲线显示
+            showAllSymbol: true, //显示所有图形。
+            symbol: "circle", //标记的图形为实心圆
+            symbolSize: 10, //标记的大小
+            itemStyle: {
+                //折线拐点标志的样式
+                color: "#058cff"
+            },
+            lineStyle: {
+                color: "#058cff"
+            },
+            areaStyle:{
+                color: "rgba(5,140,255, 0.2)"
+            },
+            data: ['-', 5, 5.5, 8, 5.6, 10.7, 11.5, 14]
+        },
+        {
+            name: "中国精神病医院数量",
+            type: "bar",
+            barWidth: 15,
+            itemStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 0,
+                            color: "#6f3d9e"
+                        },
+                        {
+                            offset: 1,
+                            color: "#3637a3"
+                        }
+                    ])
+                }
+            },
+            data: [657, 690, 728, 787, 831, 920, 1026, 1170, ]
+        }
+    ]
+};
+
+  myChart.setOption(option);
+  window.onresize = () => {
+    myChart.resize();
+  };
+</script>	
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">经济发展、国民年收入水平不断增高，一定程度上也减缓了患者的经济压力。<br><br>据中央人民政府统计，我国2018年人均可支配年收入达到28228元，大部分患者可以承担治疗费用。</br></br></p>	
+<div id="main8" style="width:600px;height:400px"></div>		
+<script>
+var myChart = echarts.init(document.getElementById('main8'));
+
+let main8_echartData = {
+    inner: [{
+            value: 86,
+            unit: '个',
+            name: '可以承担治疗费用'
+        },
+        {
+            value: 14,
+            unit: '个',
+            name: '难以承担治疗费用'
+        },
+      
+    ],
+    outer: [{
+            value: 19.8,
+            unit: '个',
+            name: '100元以内'
+        },
+        {
+            value: 62,
+            unit: '个',
+            name: '100-1000元'
+        },
+        {
+            value: 16.3,
+            unit: '个',
+            name: '1000-3000元'
+        },
+        {
+            value: 1.9,
+            unit: '个',
+            name: '3000元以上'
+        },
+      
+    ]
+}
+
+let legend1 = main8_echartData.inner.map(v => v.name);
+let legend2 = main8_echartData.outer.map(v => v.name);
+let legendData = [...legend1, ...legend2];
+
+let main8_option = {
+    title: {
+        text: '中国抑郁症患者治疗费用',
+        textStyle: {
+            align: 'center',
+            color: '#fff',
+            fontSize: 20,
+        },
+        top: '2%',
+        left: 'center',
+    },
+    backgroundColor:"rgba(17,16,16,0.6)",
+    color: ["#2ec7c9", "#b6a2de", "#5ab1ef", "#ffb980", "#d87a80",
+        "#8d98b3", "#FFEA01", "#B8D07C", "#fca4bb", "#dc69aa",
+        "#07a2a4", "#9a7fd1", "#588dd5", "#f5994e", "#c05050",
+        "#59678c", "#c9ab00", "#7eb00a", "#6f5553", "#c14089"
+    ],
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}：{d}%"
+    },
+    series: [{
+            name: '对个人生活影响',
+            type: 'pie',
+            radius: [0, '35%'],
+            itemStyle: {
+                normal: {
+                    borderColor: '#fff',
+                    borderWidth: 2
+                }
+            },
+            label: {
+                normal: {
+                    position: 'inner'
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data: main8_echartData.inner
+        },
+        {
+            name: '治疗费用占比',
+            type: 'pie',
+            radius: ['45%', '55%'],
+            data: main8_echartData.outer,
+            labelLine: {
+                normal: {
+                    length: 20,
+                    length2: 140,
+                    lineStyle: {
+                        color: '#e6e6e6'
+                    }
+                }
+            },
+            label: {
+                normal: {
+                    formatter: params => {
+                        return (
+                            '{icon|●}{name|' + params.name + '}{percent|'+ params.percent.toFixed(1) +'%}'
+                        );
+                    },
+                    padding: [0, -130, 25, -130],
+                    rich: {
+                        color: '#333',
+                        icon: {
+                            fontSize: 16
+                        },
+                        name: {
+                            fontSize: 14,
+                            padding: [0, 5, 0, 5],
+                            color: '#666666'
+                        },
+                        percent: {
+                            color: '#333',
+                            padding: [0, 5, 0, 0],
+                        },
+                        value: {
+                            fontSize: 16,
+                            fontWeight: 'bold',
+                            color: '#333333'
+                        }
+                    }
+                }
+            },
+        }
+    ]
+};
+  myChart.setOption(main8_option);
+  window.onresize = () => {
+    myChart.resize();
+  };
+</script>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">随着国家的重视、医疗费用的减轻、人们观念的变化，</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">更多的抑郁症患者能够得到及时的救治,自杀率也有所下降。</p>
+<div id="main9" style="width:600px;height:350px"></div>		
+<script>
+  var myChart = echarts.init(document.getElementById('main9'));
+
+  var option = {
+     title: {
+        text: '中国抑郁症患者自杀率',
+        textStyle: {
+            align: 'center',
+            color: '#fff',
+            fontSize: 20,
+        },
+        top: '2%',
+        left: 'center',
+    },
+    backgroundColor: "rgba(17,16,16,0.6)",//背景色
+   tooltip: {
+         trigger: "axis",
+       
+  axisPointer: {
+    // 坐标轴指示器，坐标轴触发有效
+    type: "shadow" // 默认为直线，可选为：'line' | 'shadow'
+  },
+  formatter:function(params) {
+    var str = params[0].name + '<br>'
+    for(let item of params) {
+      str += item.seriesName + ' : ' + item.value + '%<br>'
+    }
+    return str;
+  }
+},
+
+    
+    xAxis: {
+        
+        data: ['1997', '1998', '1999', '2000', '2001', '2002',"2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017"],
+        axisTick: {show: false},
+        axisLine: {show: false},
+        axisLabel: {
+            textStyle: {
+                color: '#984B4B'
+            }
+        }
+    },
+    yAxis: {
+        splitLine: {show: false},
+        axisTick: {show: false},
+        axisLine: {show: false},
+        axisLabel: {show: false}
+    },
+    color: ['#984B4B'],
+    series: [{
+        name: '自杀率',
+        type: 'pictorialBar',
+        barCategoryGap: '-80%',
+        // symbol: 'path://M0,10 L10,10 L5,0 L0,10 z',
+        symbol: 'path://M0,10 L10,10 C5.5,10 5.5,5 5,0 C4.5,5 4.5,10 0,10 z',
+        itemStyle: {
+            normal: {
+                //barBorderRadius: 5,
+                //渐变色
+                color: new echarts.graphic.LinearGradient(
+                    0, 0, 0, 1,
+                    [
+                        {offset: 0, color: '#804040'},
+                        {offset: 1, color: '#804040'}
+                    ]
+                )
+            }
+            
+            
+        },
+        data: [18.25, 17.13, 15.78, 14.25, 12.31, 11.29,11.38,11.57,11.07,10.31,9.72,9.35,9.13,8.87,8.37,7.96,7.64,7.54,7.42,7.26,7.21],
+        z: 10
+    }]
+};
+  myChart.setOption(option);
+  window.onresize = () => {
+    myChart.resize();
+  };
+</script>
+</div>
+<div id="division6">	
+<div id= "paragragh" style="height:35px;vertical-align: middle"><p>六、如果你感到抑郁</p></div>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">请放下顾虑，咨询专业医生。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">药物+心理治疗，是目前对抑郁症最好的治疗方法。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">抗抑郁药物能有效缓解抑郁心境，有效率为60%-80%。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">常见的抗抑郁药物有氟西汀、帕罗西汀、氟伏沙明等药物；</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">常见的心理疗法有认知行为治疗、人际心理治疗、辩证行为疗法等。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">重度抑郁患者：“我要很努力才能过完一天”</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">（拖动可排序）</p>	
+<div id="drag">
+<div class="box box-5">
+    <dl><i class="hander">9：00</i><img src="http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDKMrdTWWdCABu9oCi9QKgS72eGGWYbldmVbwH6g3Q1dxtMvRi0WBqFMN2WCtt8kG9dTWaNFOZ0lSm16JlfOI82U!/r" width="150px" height="150px"></dl>
+	<dl><i class="hander">10:00</i><img src="http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDI585087nXQkSyHO4B6yLvB*D2PmQgl5WoyXNpyus7j0GplZzhq8W4Y97p6cIdtrSzBqT.hcyIO9qi0gAsWB5Vc!/r" width="150px" height="150px"></dl>
+	<dl><i class="hander">12：00</i><img src="http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDDfeRm0x1uJ1hBUMoP9eTRZ8YJ.kxt.XCONGttf2liSTucavbcT66nTrVRx1WzJjqIkUnf25rrEXfFjYVRYdHCs!/r" width="150px" height="150px"></dl>
+	<dl><i class="hander">13：00</i><img src="http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDHAmVFn1rMk2bNqY2RdyyRZ1YkquQYxkTNg4DHZJvzZ92KUYfIYMM4kkfh87Ir5P5KssTZZSoDoiRAiGo9biMII!/r" width="150px" height="150px"></dl>
+	<dl><i class="hander">14：30</i><img src="http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDP.flUyiHiXaDDMh8S*GZx9qsKefkvvURNp*TbPBPFXzIDCshER*ZPDPCxgVnvKkzfh4Zzv.zzWiq.NxwQmD*Ww!/r" width="150px" height="150px"></dl>
+	<dl><i class="hander">15：15</i><img src="http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDGGYd4L6QWuSZXSu*xL.uLsCH79ruuboX1eGAiYMtwaNY9ZF5LmR7UgthdiY1kGVPfxz3kv5lOJ82e1hATMGmsU!/r" width="150px" height="150px"></dl>
+	<dl><i class="hander">19：30</i><img src="http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDLYSRN6EtKyFyBcs*oSrIQ5yL2S4nfcNvI.cRLJVWr5FwzE4emCy0ilrQu13zP5RhA9.6ZjgzU8BskJpVph6Z70!/r" width="150px" height="150px"></dl>
+	<dl><i class="hander">21：00</i><img src="http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDD6kxGBYnBtziBvlSzL.15Gq98rHbikl4Is1wRzQFUbg9XwPJdHQmlqqhdksXiwHhllS86o6bBkmqzlJq09vqkg!/r" width="150px" height="150px"></dl>
+	<dl><i class="hander">0：00</i><img src="http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDLEPPdSePrAIoJEB6aBT5kqRVyGPPYCdIzUYQZeh14DW*oot45gllI2vuvp1cM.q*vPcZwvAMxg3bLg6v9O.fxI!/r" width="150px" height="150px"></dl>
+	<dl><i class="hander">3：00</i><img src="http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDAPSq2BiDO82SCAvyfpn2tqmYl7ObqY*egvtXRfvD0ZIV3Ahfe9*kandiEExDzL2TKF7yTLrZJpKSxT.mKTxmNs!/r" width="150px" height="150px"></dl>
+</div>
+</div>	
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">如果你身处抑郁症的漩涡，请及时到医院寻求专业治疗。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">不要害怕也不要犹豫，你只是生病了，积极治疗，你的病会好起来。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">如果你身边的朋友向你倾诉，请认真倾听并报以尊重。同时建议他们尽快就医。</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:20px;text-align: center">并不是每个人都会被温柔以待，对待抑郁症，请多些宽容，多谢理解。</p>
+			
+<br>
+<p style="font-family: '等线 Light';color: rgba(216,207,207,1.00);font-size:14px;text-align:center">数据来源：<br><br>2019抑郁症领域白皮书<br>中国慢性病前瞻研究：中国30~79岁成年人抑郁发作的地区及人群分布特征<br>华利教育、搜狐网、百度指数、百度文库<br>2018年中国精神病医院行业市场现状及前景分析<br>中华人民共和国中央人民政府网站<br>《抑郁症患者呈低龄化，仅10%接受治疗》:https://news.99.com.cn/xwsjzz/20160923/653390.htm<br>《一位重度抑郁症患者的一天》:http://www.360doc.com/content/16/1019/03/5316440_599500854.shtml<br><i>Prevalance of mental disorders in China:a cross-sectional epidemiological study</i><br>Our World in Data:https://ourworldindata.org/search?q=depression</p>
+<p style="font-family: '等线 Light';color: rgba(255,255,255,1.00);font-size:16px;text-align: center">中南财经政法大学·新闻与文化传播学院<br><br>◎作者：巴毅然&nbsp;&nbsp;廖少康</p>		
+<br>	
+</div>	
+</body>
+</html>
