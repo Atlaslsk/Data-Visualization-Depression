@@ -1,0 +1,214 @@
+#card{
+	margin:0;
+	color:#444;
+	background-image: url();
+	background-size:auto;
+	font:300 18px/18px Roboto, sans-serif;
+}
+*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box;margin: 0;
+  padding: 0;}
+.pull-left{float:left}
+.pull-right{float:right}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+
+.author-quote-wrap .author-quote,
+.author-quote-wrap .author-photo:before{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+}
+
+.author-quote-wrap{
+	color:#fff;
+	width:100%;
+	overflow:hidden;
+	max-width:560px;
+	min-height:390px;
+	margin:50px auto 0;
+	background:rgba(17,16,16,0.7);
+	position:relative;
+	-webkit-box-shadow:0 16px 28px 0 rgba(0,0,0,.22),0 25px 55px 0 rgba(0,0,0,.21);
+	        box-shadow:0 16px 28px 0 rgba(0,0,0,.22),0 25px 55px 0 rgba(0,0,0,.21);
+}
+.author-quote-wrap .author-quote{
+	display:none;
+}
+.author-quote-wrap .toggle-quote{
+	display:none;
+}
+.author-quote-wrap .toggle-quote:checked + .author-quote{
+	display:block;
+}
+.author-quote-wrap .author-quote a{
+	color:inherit;
+	text-decoration:none;
+}
+.author-quote-wrap .author-photo,
+.author-quote-wrap .quote-content{
+	height:100%;
+	position:relative;
+}
+.author-quote-wrap .author-photo{
+	width:140px;
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	quotes:'\201C''\201D''\2018''\2019';
+}
+.author-quote-wrap .author-photo.photo-a{
+	background-image:url(http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDI2MGa.Qbm6RlcGuBQgK21t2NcDzehRzng*eq4GfO9u2t2SMO3CfbRmDeYHjiHhCpNrP0QKfG7UOwVXQA50Gzxs!/r);
+}
+.author-quote-wrap .author-photo.photo-b{
+	background-image:url(http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDM1czOQk1vLUNfuaxU6WY.Ext6mkbAI*xpgNZiaVb71jhK0EKeM9KsUNr8o2Zn6QBDsZkN8HerrA0wujWUMgwxk!/r);
+}
+.author-quote-wrap .author-photo.photo-c{
+	background-image:url(http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDE9TBRbKojSijx8aFrdNws3L52bEehS7Dm1.IowYnJOrw5YHfQnZVxtheWTGY14EAFDaYnLQePRgCMoVzJU2JNk!/r);
+}
+.author-quote-wrap .author-photo.photo-d{
+	background-image:url(http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDFvOkgX8r0E076.vu4NtkKl93fxwzpTBaMKy6a5CWe6OJZoyZujfeMIg7gDYS4h5ZU5BrR3PYi7BrVmOGiuPxpI!/r);
+}
+.author-quote-wrap .author-photo.photo-e{
+	background-image:url(http://r.photo.store.qq.com/psc?/V12K2qrn1wtqCf/Af1yGqSdppVqA7I0*cpgDBjWQ9wPZShtdHHPrECsqcan45EmJIS.FaLX7LZV4SVbygTO9597GpOL0i8PyNK2.iyy7kVen9jYbM0LqBGE5Ys!/r);
+}
+.author-quote-wrap .author-photo:before{
+	content:'';
+	background: rgba(0,0,0,0.65);
+}
+.author-quote-wrap .author-photo:after{
+	top:15px;
+	left:60px;
+	font-size:72px;
+	line-height:72px;
+	position:absolute;
+	font-family:serif;
+	content:open-quote;
+}
+.author-quote-wrap .author-photo .navigate{
+	left:15px;
+	z-index:10;
+	right:15px;
+	bottom:15px;
+	position:absolute;
+	text-align:center;
+}
+.author-quote-wrap .author-photo .navigate .label{
+	width:15px;
+	height:30px;
+	cursor:pointer;
+	position:relative;
+	display:inline-block;
+}
+.author-quote-wrap .author-photo .navigate .label.left{
+	left:-30px;
+}
+.author-quote-wrap .author-photo .navigate .label.right{
+	right:-30px;
+}
+.author-quote-wrap .author-photo .navigate .label.disabled{
+	cursor:not-allowed;
+}
+.author-quote-wrap .author-photo .navigate .label:before,
+.author-quote-wrap .author-photo .navigate .label:after{
+	content:'';
+	height:2px;
+	width:15px;
+	background:#ccc;
+	position:absolute;
+}
+.author-quote-wrap .author-photo .navigate .label:before{
+	top:62%;
+}
+.author-quote-wrap .author-photo .navigate .label:after{
+	bottom:62%;
+}
+.author-quote-wrap .author-photo .navigate .label.left:before,
+.author-quote-wrap .author-photo .navigate .label.right:after{
+	-webkit-transform:rotate(45deg);
+	        transform:rotate(45deg);
+}
+.author-quote-wrap .author-photo .navigate .label.right:before,
+.author-quote-wrap .author-photo .navigate .label.left:after{
+	-webkit-transform:rotate(-45deg);
+	        transform:rotate(-45deg);
+}
+.author-quote-wrap .author-photo .navigate .label.left:before,
+.author-quote-wrap .author-photo .navigate .label.left:after{
+	left:0;
+}
+.author-quote-wrap .author-photo .navigate .label.right:before,
+.author-quote-wrap .author-photo .navigate .label.right:after{
+	right:0;
+}
+.author-quote-wrap .author-photo .navigate .label.disabled:before,
+.author-quote-wrap .author-photo .navigate .label.disabled:after,
+.author-quote-wrap .author-photo .navigate .label.disabled:hover:before,
+.author-quote-wrap .author-photo .navigate .label.disabled:hover:after{
+	background:#bbb;
+}
+.author-quote-wrap .author-photo .navigate .label:hover:before,
+.author-quote-wrap .author-photo .navigate .label:hover:after{
+	background:#fff;
+}
+
+.author-quote-wrap .quote-content{
+	padding:15px;
+	width:calc(560px - 140px);
+}
+.quote-content .quote-like{
+	font-size:12px;
+	font-weight:400;
+	padding:4px 8px;
+	border-radius:15px;
+	display:inline-block;
+	background:rgba(0,0,0,.2);
+}
+.quote-content .quote-like .love{
+    width:18px;
+    height:10px;
+    position:relative;
+	display:inline-block;
+}
+.quote-content .quote-like .love:before,
+.quote-content .quote-like .love:after {
+    top:0;
+    left:7px;
+    content:'';
+    width:7px;
+    height:12px;
+    background:#fff;
+    position:absolute;
+	-webkit-transform:rotate(-45deg);
+	        transform:rotate(-45deg);
+	-webkit-transform-origin:0 100%;
+	        transform-origin:0 100%;
+    border-radius:20px 20px 0 0;
+}
+.quote-content .quote-like .love:after {
+    left:0;
+	-webkit-transform:rotate(45deg);
+	        transform:rotate(45deg);
+	-webkit-transform-origin :100% 100%;
+	        transform-origin :100% 100%;
+}
+
+.quote-content .quote-text,
+.quote-content .quote-author{
+	text-transform:uppercase;
+}
+.quote-content .quote-text{
+	font-size:48px;
+	font-weight:900;
+	line-height:55px;
+}
+.quote-content .quote-author{
+	bottom:15px;
+	font-size:14px;
+	font-weight:500;
+	position:absolute;
+}
+.quote-content .quote-author:before{
+	content:'- ';
+}
